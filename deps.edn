@@ -1,13 +1,21 @@
 {:paths ["src" "resources"]
- :deps {org.clojure/clojure {:mvn/version "1.11.1"}}
+ :deps {org.clojure/clojure            {:mvn/version "1.11.1"}
+        org.clojure/data.json          {:mvn/version "2.4.0"}
+        org.apache.kafka/kafka-clients {:mvn/version "2.8.0"}
+        com.stuartsierra/component     {:mvn/version "1.1.0"}
+        compojure/compojure            {:mvn/version "1.7.0"}
+        ring/ring                      {:mvn/version "1.9.6"}
+        ring/ring-defaults             {:mvn/version "0.3.4"}
+        selmer/selmer                  {:mvn/version "1.12.55"}}
  :aliases
- {:dev {}
+ {:dev {:extra-deps {djblue/portal {:mvn/version "0.35.1"}}}
   :run-m {:main-opts ["-m" "chrisbroome.clj-todos"]}
   :run-x {:ns-default chrisbroome.clj-todos
           :exec-fn greet
           :exec-args {:name "Clojure"}}
   :build {:deps {io.github.seancorfield/build-clj
-                 {:git/tag "v0.6.3" :git/sha "9b8e09b"
+                 {:git/tag   "v0.6.3"
+                  :git/sha   "9b8e09b"
                   ;; since we're building an app uberjar, we do not
                   ;; need deps-deploy for clojars.org deployment:
                   :deps/root "slim"}}
