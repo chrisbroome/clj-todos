@@ -10,5 +10,8 @@
   "scripts": {},
   "keywords": [],
   "author": "",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "shadow-cljs": "^2.21.0"
+  }
 }

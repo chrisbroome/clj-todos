@@ -10,12 +10,14 @@
 .java-version
 .lein-*
 .lsp/
+node_modules
 .nrepl-history
 .nrepl-port
 .portal
 .project
 .rebel_readline_history
 .settings
+.shadow-cljs
 .socket-repl-port
 .sw*
 .vscode
@@ -27,3 +29,6 @@
 /checkouts
 /classes
 /target
+/resources/public/js/cljs-runtime
+/resources/public/js/manifest.edn
+/resources/public/js/main.js
