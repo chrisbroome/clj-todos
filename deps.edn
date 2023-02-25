@@ -1,7 +1,8 @@
 {:paths ["src" "resources"]
  :deps {org.clojure/clojure {:mvn/version "1.11.1"}}
  :aliases
- {:run-m {:main-opts ["-m" "chrisbroome.clj-todos"]}
+ {:dev {}
+  :run-m {:main-opts ["-m" "chrisbroome.clj-todos"]}
   :run-x {:ns-default chrisbroome.clj-todos
           :exec-fn greet
           :exec-args {:name "Clojure"}}
