@@ -1,15 +1,15 @@
 .calva/output-window/
 .classpath
-.clj-kondo/.cache
+.clj-kondo/
 .cpcache
 .eastwood
 .factorypath
 .hg/
 .hgignore
+.idea/
 .java-version
 .lein-*
-.lsp/.cache
-.lsp/sqlite.db
+.lsp/
 .nrepl-history
 .nrepl-port
 .portal
@@ -20,6 +20,7 @@
 .sw*
 .vscode
 *.class
+*.iml
 *.jar
 *.swp
 *~
