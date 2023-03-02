@@ -10,7 +10,8 @@
  :aliases
  {:dev   {:extra-deps {djblue/portal {:mvn/version "0.35.1"}}}
   :cljs  {:extra-paths ["src/cljs"]
-          :extra-deps {thheller/shadow-cljs {:mvn/version "2.21.0"}}}
+          :extra-deps {lilactown/helix {:mvn/version "0.1.9"}
+                       thheller/shadow-cljs {:mvn/version "2.21.0"}}}
   :run-m {:main-opts ["-m" "chrisbroome.backend.clj-todos"]}
   :run-x {:ns-default chrisbroome.backend.clj-todos
           :exec-fn    greet

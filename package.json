@@ -12,6 +12,7 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
+    "react-dom": "^18.2.0",
     "shadow-cljs": "^2.21.0"
   }
 }
