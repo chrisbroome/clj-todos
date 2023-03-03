@@ -3,13 +3,11 @@
             [ring.adapter.jetty :refer [run-jetty]]
             [ring.middleware.defaults :refer [site-defaults
                                               wrap-defaults]]
-            [ring.util.response :as resp]
-            [selmer.parser :as html])
+            [ring.util.response :as resp])
   (:gen-class))
 
 (defn handler [req]
   (-> (resp/resource-response "public/index.html")
-      (doto tap>)
       (resp/content-type "text/html")))
 
 (defn favicon [req]
