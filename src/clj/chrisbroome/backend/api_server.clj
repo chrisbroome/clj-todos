@@ -19,7 +19,9 @@
 
   (stop [component]
     (if (not server)
-      (println "Api Server already stopped")
+      (do
+        (println "Api Server already stopped")
+        component)
       (do
         (println "Stopping Api Server")
         (-> server .stop)
