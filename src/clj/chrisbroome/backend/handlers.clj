@@ -15,8 +15,9 @@
   (GET "/favicon.ico" [] #'favicon)
   (GET "/" [] #'handler))
 
-(defn create-app []
+(defn create-app
   "Create an instance of our ring api handlers"
+  []
   (wrap-defaults #'c-router site-defaults))
 
 (defrecord ApiApp [handler]
