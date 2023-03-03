@@ -13,9 +13,6 @@
           :extra-deps {lilactown/helix {:mvn/version "0.1.9"}
                        thheller/shadow-cljs {:mvn/version "2.21.0"}}}
   :run-m {:main-opts ["-m" "chrisbroome.backend.clj-todos"]}
-  :run-x {:ns-default chrisbroome.backend.clj-todos
-          :exec-fn    greet
-          :exec-args  {:name "Clojure"}}
   :build {:deps       {io.github.seancorfield/build-clj {:git/tag   "v0.6.3"
                                                          :git/sha   "9b8e09b"
                   ;; since we're building an app uberjar, we do not
